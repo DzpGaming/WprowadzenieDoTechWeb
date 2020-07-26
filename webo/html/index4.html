@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/style.css" type="text/css" rel="stylesheet">
         <title>Document</title>
+        <script src="../js/zaloguj.js"></script>
     </head>
     <body>
         <!-- Header z menu -->
@@ -36,51 +37,31 @@
         </svg></a></li>
             </ul>
         </header>
-
-        <section>
+        
+        <section id="left">
             <div>
-                <h1>lorem ipsum...</h1>
-                <p>lorem ipsum...</p>
-                <button>hehs</button>
+                <ul>
+                    <span>Login: </span><input id="login" type="text"><br>
+                    <span>Hasło: </span><input id="haslo" type="password"><br>
+                    <span onclick="zaloguj()" class="loginBtn">Zaloguj</span>
+                </ul>
             </div>
+            
+        </section>
+        
+        <section id="right">
+                <h1 id="preLog">By zobaczyć zawartość zaloguj(login: login, hasło: h4sło)</h1>
+            <div id="postLog">
+                <h1>Zalogowano!</h1>
+                <span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</span>
+            </div>
+            
         </section>
 
-        <section>
+        <footer id="bot">
             <div>
-                <h2>lorem ipsum...</h2>
-                <p>lorem ipsum...</p>
-                <button>hehs</button>
-            </div>
-            <div>
-                <h2>lorem ipsum...</h2>
-                <p>lorem ipsum...</p>
-                <button>hehs</button>
-            </div>
-            <div>
-                <h2>lorem ipsum...</h2>
-                <p>lorem ipsum...</p>
-                <button>hehs</button>
-            </div>
-        </section>
-
-        <footer>
-            <ul>
-                <li><a href="#">link1</a> </li>
-                <li><a href="#">link2</a></li>
-                <li><a href="#">link3</a></li>
-                <li><a href="#">link4</a></li>
-            </ul>
-            <div>
-                <span>Lorem ipsum...</span>
+                <span>Karoń Dominik, nr. albumu 12293</span>
             </div>
         </footer>
-
-        
-        
-
-        
-
-        
-
     </body>
 </html>

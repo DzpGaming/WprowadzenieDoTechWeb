@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/style.css" type="text/css" rel="stylesheet">
         <title>Document</title>
+        <script src="../js/intel.js"></script>
     </head>
     <body>
         <!-- Header z menu -->
@@ -37,50 +38,55 @@
             </ul>
         </header>
 
-        <section>
+        
+        
+        <section id="left">
             <div>
-                <h1>lorem ipsum...</h1>
-                <p>lorem ipsum...</p>
-                <button>hehs</button>
+                <h1>Intel 8086</h1>
+                <span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</span>
             </div>
+            
+        </section>
+        
+        <section id="right">
+            <div>
+                <ul>
+                    <li><span>AX:</span><span class="heap" id="AX">212</span></li>
+                    <li><span>BX:</span><span class="heap" id="BX">321321</span></li>
+                    <li><span>CX:</span><span class="heap" id="CX">123213</span></li>
+                    <li><span>DX:</span><span class="heap" id="DX">4324</span></li>
+                    
+                    <span>MOV(skad/gdzie)</span>
+                    <select id="skad">
+                        <option value="AX">AX</option>
+                        <option value="BX">BX</option>
+                        <option value="CX">CX</option>
+                        <option value="DX">DX</option>
+                    </select>
+                    <select id="gdzie">
+                        <option value="AX">AX</option>
+                        <option value="BX">BX</option>
+                        <option value="CX">CX</option>
+                        <option value="DX">DX</option>
+                    </select>
+                    <span onclick="zamien()" class="GoBtn">GO</span><br>
+                    <span>Wprowadź do: </span>
+                    <select id="dokad">
+                        <option value="AX">AX</option>
+                        <option value="BX">BX</option>
+                        <option value="CX">CX</option>
+                        <option value="DX">DX</option>
+                    </select>
+                    <input id="tekst" type="text"><span onclick="wprowadz()" class="GoBtn">GO</span>
+                </ul>
+            </div>
+            
         </section>
 
-        <section>
+        <footer id="bot">
             <div>
-                <h2>lorem ipsum...</h2>
-                <p>lorem ipsum...</p>
-                <button>hehs</button>
-            </div>
-            <div>
-                <h2>lorem ipsum...</h2>
-                <p>lorem ipsum...</p>
-                <button>hehs</button>
-            </div>
-            <div>
-                <h2>lorem ipsum...</h2>
-                <p>lorem ipsum...</p>
-                <button>hehs</button>
-            </div>
-        </section>
-
-        <footer>
-            <ul>
-                <li><a href="#">link1</a> </li>
-                <li><a href="#">link2</a></li>
-                <li><a href="#">link3</a></li>
-                <li><a href="#">link4</a></li>
-            </ul>
-            <div>
-                <span>Lorem ipsum...</span>
+                <span>Karoń Dominik, nr. albumu 12293</span>
             </div>
         </footer>
-
-        
-        
-
-        
-
-        
-
     </body>
 </html>
