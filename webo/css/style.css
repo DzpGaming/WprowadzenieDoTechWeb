@@ -1,0 +1,168 @@
+body {
+    background-color: lightgray;
+}
+
+#top {
+    width: 100%;
+    height: 5vh;
+    min-height: 50px;
+    background-color: dimgray;
+}
+
+#top ul li {
+    width: 25%;
+    height: 5vh;
+    float: left;
+    list-style-type: none;
+}
+
+#top ul li a{
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+    float: left;
+    list-style-type: none;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#top ul li #activ {
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+    float: left;
+    list-style-type: none;
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#top ul li a:hover{
+    background-color: dimgray;
+}
+
+#top ul li a:active{
+    background-color: red;
+}
+
+#mid{
+    background-color: darkgray;
+    text-align: center;
+    overflow:auto;
+}
+
+#mid div video{
+    margin-top: 5vh;
+}
+
+#bot{
+    width: 100%;
+    height: 5vh;
+    background-color: dimgray;
+}
+
+#mid #listUL{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#mid #listUL li{
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    padding: 8px 6px 8px 12px;
+    width: 75%;
+    transition: 0.2s;
+    background-color: #eee;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#mid #listUL li:nth-child(odd){
+    background-color: #c9c9c9;
+}
+
+#mid #listUL li:hover{
+    background-color: #696969;
+}
+
+#mid #listUL li.checked{
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+#mid #lista{
+    margin-bottom: 5vh;
+}
+
+#mid #lista input{
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 50%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+@media only screen and (min-width: 320px){
+    .menuText{ visibility:hidden;
+    display: none;}
+    #top { min-height: 35px;}
+    #top ul li a{min-height: 35px;}
+    #top ul li #activ{min-height: 35px;}
+    #mid {
+        width: 100%;
+        height: 100vh;
+    }
+    #bot { min-height: 35px;}
+    #mid div video{
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media only screen and (min-width: 750px){
+    .menuText{ visibility: visible;
+    display: block;}
+    #top { min-height: 50px;}
+    #top ul li a{min-height: 50px;}
+    #top ul li #activ{min-height: 50px;}
+    #mid {
+        width: 100%;
+        height: 80vh;
+    }
+    #bot { min-height: 50px;}
+    #mid div video{
+        width: 640px;
+        height: 360px;
+    }
+}
+
+
